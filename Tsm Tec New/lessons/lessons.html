@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="lessons.css" />
+    <title>Lessons</title>
+  </head>
+
+  <body class="body">
+    <form action="" class="form">
+      <div class="field-wrapper">
+        <label class="lab" for="cls">Class</label>
+        <select name="" id="" required class="select-active">
+          <option class="option" value="G10A">G10A</option>
+          <option class="option" value="G10L">G10L</option>
+          <option class="option" value="G11A">G11A</option>
+          <option class="option" value="G11L">G11L</option>
+          <option class="option" value="G1A">G1A</option>
+          <option class="option" value="G1L">G1L</option>
+          <option class="option" value="G2A">G2A</option>
+          <option class="option" value="G2L">G2L</option>
+          <option class="option" value="G3A">G3A</option>
+          <option class="option" value="G3L">G3L</option>
+          <option class="option" value="G4A">G4A</option>
+          <option class="option" value="G4L">G4L</option>
+          <option class="option" value="G5A">G5A</option>
+          <option class="option" value="G5L">G5L</option>
+          <option class="option" value="G6A">G6A</option>
+          <option class="option" value="G6L">G6L</option>
+          <option class="option" value="G7A">G7A</option>
+          <option class="option" value="G7L">G7L</option> 
+          <option class="option" value="G8A">G8A</option>
+          <option class="option" value="G8L">G8L</option>
+          <option class="option" value="G9A">G9A</option>
+          <option class="option" value="G9L">G9L</option>
+        </select>
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">Subject </label>
+        <select name="" id="sub" class="select-active">
+          <option class="option" value="Arabic">Arabic</option>
+          <option class="option" value="Biology">Biology</option>
+          <option class="option" value="Chemistry">Chemistry</option>
+          <option class="option" value="Discover">Discover</option>
+          <option class="option" value="English">English</option>
+          <option class="option" value="French">French</option>
+          <option class="option" value="Geogrephy">Geogrephy</option>
+          <option class="option" value="German">German</option>
+          <option class="option" value="History">History</option>
+          <option class="option" value="ICT">ICT</option>
+          <option class="option" value="Math">Math</option>
+          <option class="option" value="Mechainc">Mechainc</option>
+          <option class="option" value="Philosophy">Philosophy</option>
+          <option class="option" value="Physics">Physics</option>
+          <option class="option" value="Professional Skills">Professional Skills</option>
+          <option class="option" value="Psychology">Psychology</option>
+          <option class="option" value="Science">Science</option>
+          <option class="option" value="Social">Social</option>
+          <option class="option" value="French">Vallues and Ethics</option>
+        </select>
+      </div>
+
+      <div class="field-wrapper">
+        <label class="lab" for="per">Period </label>
+        <select name="" id="per" class="select-active">
+          <option class="option" value="First Term">First Term</option>
+          <option class="option" value="Second Term">Second Term</option>
+          <option class="option" value="Summer Course">Summer Course</option>
+        </select>
+      </div>
+
+      <div class="field-wrapper">
+        <label class="lab" for="theSelect">File Source </label>
+        <select name="theSelect" id="theSelect" class="select-active" required>
+          <option class="option" value="hide">Uploaded Files</option>
+          <option class="option" value="show">Link</option>
+        </select>
+      </div>
+
+      <div class="field-wrapper" id="theHid">
+        <label class="lab">Browse for file </label>
+        <select name="" id="theHid" class="select-active">
+          <option class="option" value="Nothing">Nothing</option>
+        </select>
+      </div>
+      <input type="submit" value="Display" class="btn-active" />
+    </form>
+    <form class="form">
+      <div class="field-wrapper">
+        <label class="lab" class="lab" for="">Lesson title </label>
+        <input type="text" class="btn-active" required />
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" class="lab" for="">Lesson Description </label>
+        <input type="text" class="btn-active" />
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" class="lab" for="">Quiz link </label>
+        <input type="url" class="btn-active" placeholder="URL" required />
+      </div>
+      <br />
+      <input type="submit" id="less" value="Add Lesson" class="btn-active" />
+      <br />
+      <div class="field-wrapper">
+        <table class="table bg-white">
+          <thead class="bg-dark text-light">
+            <tr class="tr">
+              <th class="th">R.N.</th>
+              <th class="th">Video Link</th>
+              <th class="th">Test Link</th>
+              <th class="th">LessonNum</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="tr">
+              <td data-title="R.N.">215</td>
+              <td data-title="Video Link">التطبيق الثاني لغة عربية</td>
+              <td data-title="Test Link"><a href="#">Run</a></td>
+              <td data-title="LessonNum">9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="container">
+        <label class="lab">
+          <input type="radio" name="radio" checked="" class="btn-active"/>
+          <span class="span">R.N.</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="btn-active"/>
+          <span class="span">Classes</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="btn-active"/>
+          <span class="span">Video</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="btn-active"/>
+          <span class="span">Period</span>
+        </label>
+      </div>
+      <br />
+      <div class="field-wrapper">
+        <label class="lab">RN</label>
+        <input type="text" class="btn-active" required />
+      </div>
+      <br />
+      <input type="submit" value="Update" class="btn-active" />
+      <br />
+      <input type="reset" value="Delete" class="btn-active" />
+    </form>
+  </body>
+</html>

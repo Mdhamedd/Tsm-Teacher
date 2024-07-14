@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Super Quiz</title>
+  </head>
+  <body class="body">
+    <form action="" class="form">
+      <div class="field-wrapper">
+        <label class="lab" for="cls">State</label>
+        <select name="" id="" required class="select-active">
+          <option class="option" value="G10A">G10A</option>
+          <option class="option" value="G10L">G10L</option>
+          <option class="option" value="G11A">G11A</option>
+          <option class="option" value="G11L">G11L</option>
+          <option class="option" value="G1A">G1A</option>
+          <option class="option" value="G1L">G1L</option>
+          <option class="option" value="G2A">G2A</option>
+          <option class="option" value="G2L">G2L</option>
+          <option class="option" value="G3A">G3A</option>
+          <option class="option" value="G3L">G3L</option>
+          <option class="option" value="G4A">G4A</option>
+          <option class="option" value="G4L">G4L</option>
+          <option class="option" value="G5A">G5A</option>
+          <option class="option" value="G5L">G5L</option>
+          <option class="option" value="G6A">G6A</option>
+          <option class="option" value="G6L">G6L</option>
+          <option class="option" value="G7A">G7A</option>
+          <option class="option" value="G7L">G7L</option>
+          <option class="option" value="G8A">G8A</option>
+          <option class="option" value="G8L">G8L</option>
+          <option class="option" value="G9A">G9A</option>
+          <option class="option" value="G9L">G9L</option>
+        </select>
+        <br />
+        <div class="field-wrapper">
+          <label class="lab" for="cls">Class</label>
+
+          <div class="checkbox-wrapper-33">
+            <label class="checkbox">
+              <input class="checkbox__trigger visuallyhidden" type="checkbox"/>
+              <span class="checkbox__symbol">
+                <svg
+                  aria-hidden="true"
+                  class="icon-checkbox"
+                  width="28px"
+                  height="28px"
+                  viewBox="0 0 28 28"
+                  version="1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4 14l8 7L24 7"></path>
+                </svg>
+              </span>
+              <p class="checkbox__textwrapper">A</p>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__trigger visuallyhidden" type="checkbox"/>
+              <span class="checkbox__symbol">
+                <svg
+                  aria-hidden="true"
+                  class="icon-checkbox"
+                  width="28px"
+                  height="28px"
+                  viewBox="0 0 28 28"
+                  version="1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path class="path" d="M4 14l8 7L24 7"></path>
+                </svg>
+              </span>
+              <p class="checkbox__textwrapper">B</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">Subject</label>
+        <select name="" id="sub" class="select-active">
+          <option class="option" value="Arabic">Arabic</option>
+          <option class="option" value="Biology">Biology</option>
+          <option class="option" value="Chemistry">Chemistry</option>
+          <option class="option" value="Discover">Discover</option>
+          <option class="option" value="English">English</option>
+          <option class="option" value="French">French</option>
+          <option class="option" value="Geogrephy">Geogrephy</option>
+          <option class="option" value="German">German</option>
+          <option class="option" value="History">History</option>
+          <option class="option" value="ICT">ICT</option>
+          <option class="option" value="Math">Math</option>
+          <option class="option" value="Mechainc">Mechainc</option>
+          <option class="option" value="Philosophy">Philosophy</option>
+          <option class="option" value="Physics">Physics</option>
+          <option class="option" value="Professional Skills">
+            Professional Skills
+          </option>
+          <option class="option" value="Psychology">Psychology</option>
+          <option class="option" value="Science">Science</option>
+          <option class="option" value="Social">Social</option>
+          <option class="option" value="French">Vallues and Ethics</option>
+        </select>
+        <br />
+
+        <label class="lab" for="cls">Type</label>
+        <select name="" id="" required class="select-active">
+          <option class="option" value="Super Quiz">Super Quiz</option>
+        </select>
+        <br />
+        <label class="lab" for="per">Period</label>
+        <select name="" id="per" class="select-active">
+          <option class="option" value="First Term">First Term</option>
+          <option class="option" value="Second Term">Second Term</option>
+          <option class="option" value="Summer Course">Summer Course</option>
+        </select>
+      </div>
+
+      <div class="field-wrapper">
+        <label class="lab" for="per">Description</label>
+        <input type="text" required class="input-field" id="input"/>
+        <br />
+        <label class="lab" for="per">File Source</label>
+        <select name="" id="per" class="select-active">
+          <option class="option" value="Link">Link</option>
+          <option class="option" value="TSM Quiz">TSM Quiz</option>
+        </select>
+        <br />
+        <label class="lab" for="per"> Link location url</label>
+        <input type="url" placeholder="URL" required class="input-field" id="input"/>
+      </div>
+
+      <input type="submit" value="Add" class="input-field" id="input"/>
+
+      <div class="container">
+        <label class="lab">
+          <input type="radio" name="radio" checked="" class="radio" id="input"/>
+          <spa class="span">R.N.</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="radio" id="input"/>
+          <span class="span">Classes</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="radio" id="input"/>
+          <span class="span">Description</span>
+        </label>
+        <br />
+        <label class="lab">
+          <input type="radio" name="radio" class="radio" id="input"/>
+          <span class="span">Period</span>
+        </label>
+      </div>
+
+      <div class="field-wrapper">
+        <label class="lab" class="lab" for="">R N </label>
+        <input type="text" class="input-field" class="input-field" id="input"/>
+      </div>
+      <br />
+      <br />
+      <input type="submit" value="Update" class="input-field" id="input"/>
+      <br />
+      <br />
+      <input type="reset" value="Delete" class="input-delete" id="input"/>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>

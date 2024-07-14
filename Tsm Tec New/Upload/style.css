@@ -1,0 +1,279 @@
+:root {
+  /*=== Colors ===*/
+  --bg-color: white;
+  --primary-I: #614bc3;
+
+  /*=== Box Model ===*/
+  --l-shadow-I: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --l-shadow-II: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --border-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/*================== Start GLOBAL ======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--bg-color);
+}
+/*================== End GLOBAL ====================== */
+/*===Start Input===*/
+.input-field[type="text"],
+.btn-active[type="submit"],
+.btn-active[type="reset"] {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-active[type="submit"],
+.btn-active[type="reset"] {
+  padding: 10px 20px;
+  background-color: #614bc3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-active[type="submit"] {
+  background-color: green;
+}
+.btn-active[type="submit"]:hover {
+  background-color: rgb(37, 226, 37);
+}
+
+.btn-active[type="reset"] {
+  background-color: red;
+}
+.btn-active[type="reset"]:hover {
+  background-color: rgb(250, 59, 59);
+}
+.input-field[type="text"] {
+  box-shadow: inset 0 0 0 0.1em #020274;
+  border: none;
+}
+/*==RADIO BUUTONS==*/
+.container .form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container .lab {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+
+.container .lab .radio {
+  position: absolute;
+  left: -9999px;
+}
+
+.container .lab .radio:checked + .span {
+  background-color: #414181;
+  color: white;
+}
+
+.container .lab .radio:checked + .span:before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+
+.container .lab .span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+  color: #414181;
+}
+
+.container .lab .span:hover {
+  background-color: #d6d6e5;
+}
+
+.container .lab .span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+}
+
+/*===End Input===*/
+
+.form {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.lab {
+  display: inline-block;
+  margin-right: 100px;
+  margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+.rn {
+  display: inline-block;
+  margin-right: 100px;
+  margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.select-active,
+.input-field,
+.btn-active {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(221, 221, 221, 0.52);
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.select-active:hover {
+  outline: none;
+  border: 1px solid var(--primary-I);
+  box-shadow: none;
+}
+.select-active:focus {
+  outline: none;
+}
+
+.select-active .option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/*================== End FORM ====================== */
+/* =========================== Start Select Folder================= */
+.Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 83);
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* =========================== End Select Folder================= */
+
+/*================== Start RESPONSIVE ======================*/
+@media screen and (min-width: 768px) {
+  .body {
+    flex-direction: column;
+  }
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .field-wrapper {
+    width: 32%;
+    justify-content: space-between;
+  }
+
+  .select-active,
+  .input-field[type="text"],
+  .btn-active[type="submit"] {
+    width: 100%;
+  }
+  .radio[type="radio"],
+  .radio[type="radio"] + .lab {
+    font-size: 12px;
+  }
+}
+
+/*================== END RESPONSIVE ======================*/
+
+/*================== Start Ampliz Library ======================*/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+/*================== End Ampliz Library ======================*/

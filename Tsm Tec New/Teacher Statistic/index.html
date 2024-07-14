@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Teacher Statistic</title>
+  </head>
+  <body class="body">
+    <div class="field-wrapper" style="display: inline-block">
+      Time&Date now is : <span class="span" style="color: blue" id="timer"></span>
+    </div>
+    <form action="" class="form">
+      <div class="field-wrapper">
+        <label class="lab" for="sub">Subject :</label>
+        <select name="" id="sub" class="select-active">
+          <option class="option" value="Arabic">Arabic</option>
+          <option class="option" value="Biology">Biology</option>
+          <option class="option" value="Chemistry">Chemistry</option>
+          <option class="option" value="Discover">Discover</option>
+          <option class="option" value="English">English</option>
+          <option class="option" value="French">French</option>
+          <option class="option" value="Geogrephy">Geogrephy</option>
+          <option class="option" value="German">German</option>
+          <option class="option" value="History">History</option>
+          <option class="option" value="H-Writing">H-Writing</option>
+          <option class="option" value="ICT">ICT</option>
+          <option class="option" value="Math">Math</option>
+          <option class="option" value="Math2">Math2</option>
+          <option class="option" value="MathA">MathA</option>
+          <option class="option" value="Mechainc">Mechainc</option>
+          <option class="option" value="Philosophy">Philosophy</option>
+          <option class="option" value="Physics">Physics</option>
+          <option class="option" value="Professional Skills">Professional Skills</option>
+          <option class="option" value="Psychology">Psychology</option>
+          <option class="option" value="Quran">Quran</option>
+          <option class="option" value="Religion">Religion</option>
+          <option class="option" value="Rillgion">Rillgion</option>
+          <option value="Science">Sciences</option>
+          <option class="option" value="Social">Social</option>
+          <option class="option" value="Statistics">Statistics</option>
+          <option class="option" value="Vallues and Ethics">Vallues and Ethics</option>
+          <option class="option" dir="rtl" value="اكتشف">اكتشف</option>
+          <option class="option" dir="rtl" value="خط">خط</option>
+        </select>
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">From :</label>
+        <input type="date" required class="input-field"/>
+        <i class="fa fa-calendar"></i>
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">To :</label>
+        <input class="input-field" type="date" required />
+        <i class="fa fa-calendar"></i>
+      </div>
+      <br>
+      <input type="submit" value="Display" class="btn-active" />
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
